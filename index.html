@@ -24,7 +24,7 @@
 
 <link rel='stylesheet' href='css/style.css'>
 
-<title>THE EUROVAALIKONE</title>
+<title>The Eurovaalikone</title>
 </meta>
 </head>
 <body id="body-element" onload="onloadEvent()" onscroll="checkScrollButtonToggle()">
@@ -127,7 +127,9 @@
                 </div>
     
                 <div id="browse-modal-content">
-                    <div id="browse-candidate-header"></div>
+                    <div id="browse-candidate-header">
+                        <h5>Nuolia klikkaamalla löydät kaikkien niiden ehdokkaiden vastaukset, jotka vastasivat vaalikoneeseen.</h5>
+                    </div>
                     <div id="browse-candidate-selection-area"></div>
                 </div>
     
@@ -246,7 +248,6 @@
 
 
 <script>
-    // Jos javascript on käytössä, poistetaan ylärivin napeissa olevat hyperlinkit käytöstä. Syy: Samat toiminnallisuus on käytettävissä yläsivun hampurilaisvalikossa ja hakunapissa. Mutta koska nämä toiminnot vaativat javascriptin toimiakseen, tarjotaan käyttäjälle fallback-ratkaisu. ---  Olisi hyvien tapojen mukaista keskittää skriptit erilliseen tiedostoon, mutta tämä skripti tulisi ehtiä ajaa heti kun header-osa on näkyvissä. Muutoin käyttäjäjäkokemuksesta tulee epätasainen. Riippuen latausajoista ja script-blockingista, joskus tämä nappi vie tarkennetulle hakusivulle, välillä näkyviin tulee pop-uphakulaatikko.
     document.getElementById( 'hamburger-menu-button-a' ).removeAttribute( 'href' );
 </script>
 
@@ -270,7 +271,8 @@
         
         <div id="instruction-area" class="hide-before-onload">
             <p>Tervetuloa The Ulkopolitistin eurovaalikoneeseen! Kuka vuoden 2024 europarlamenttivaalien ehdokkaista on ulkopoliittisissa kysymyksissä kanssasi samalla taajuudella, entä kenen vastaukset resonoivat vähiten?</p>
-            <p>Pääset vertailemaan omia vastauksiasi ehdokkaiden kanssa, kun olet vastannut kaikkiin alla oleviin kysymyksiin. Voit myös <span class="span-hyperlink" onclick="openBrowseModal()">selata ehdokkaiden vastauksia</span> vastaamatta itse kysymyksiin.</p>
+            <p>Pääset vertailemaan omia vastauksiasi ehdokkaiden kanssa, kun olet vastannut kaikkiin alla oleviin kysymyksiin. Voit myös <span class="span-hyperlink" onclick="openBrowseModal()">selata ehdokkaiden vastauksia*</span> vastaamatta itse kysymyksiin.</p>
+            <p style="font-style: italic;">* Löydät kaikkien niiden ehdokkaiden vastaukset, jotka vastasivat vaalikoneeseen.</p>
             <p style="text-align: center">***</p>
             <p style="font-style: italic;">Vaalikoneemme on osa The Europolitist -sisältökokonaisuutta, jonka The Ulkopolitist toteuttaa yhteistyössä Euroopan parlamentin Suomen-toimiston kanssa.</p>
             <p style="font-style: italic;"><span style="font-weight: 900">Muistathan äänestää kesäkuussa käytävissä EU-vaaleissa.</span> Eurovaalit ovat ainutlaatuinen mahdollisuus päättää yhdessä Euroopan unionin tulevaisuudesta. Äänesi ratkaisee sen, ketkä valitaan Euroopan parlamenttiin edustamaan sinua. Vaalipäivä on sunnuntai 9.6.2024 ja ennakkoäänestys järjestetään 29.5.–4.6.2024.</p>
